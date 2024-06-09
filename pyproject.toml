@@ -3,5 +3,5 @@ line-length = 79
 
 [tool.flake8]
 max-line-length = 88
-extend-ignore = E203, W503
-exclude = .git,__pycache__,old,build,dist,venv
+extend-ignore = "E203, W503"
+exclude = ".git,__pycache__,old,build,dist,venv"

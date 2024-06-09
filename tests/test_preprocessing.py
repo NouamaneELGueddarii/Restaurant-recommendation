@@ -1,5 +1,8 @@
 import unittest
-from utils.text_preprocessing import preprocess_text  # Adjust the import according to your file structure
+from utils.text_preprocessing import (
+    preprocess_text,
+)  # Adjust the import according to your file structure
+
 
 class TestPreprocessText(unittest.TestCase):
     def test_basic_text(self):
@@ -37,5 +40,6 @@ class TestPreprocessText(unittest.TestCase):
         expected_result = "leaf tree falling"
         self.assertEqual(preprocess_text(text), expected_result)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

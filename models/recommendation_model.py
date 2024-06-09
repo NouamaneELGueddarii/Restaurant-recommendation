@@ -50,7 +50,7 @@ class RecommendationModel:
             key=lambda x: x[1],
             reverse=True,
         )
-        sim_scores = sim_scores[1 : num_recommendations + 1]
+        sim_scores = sim_scores[1:num_recommendations + 1]
         restaurant_indices = [i[0] for i in sim_scores]
         return self.df[
             [

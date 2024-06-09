@@ -1,7 +1,6 @@
 import unittest
-from utils.text_preprocessing import (
-    preprocess_text,
-)
+from utils.text_preprocessing import preprocess_text
+
 
 class TestPreprocessText(unittest.TestCase):
     def test_basic_text(

@@ -37,7 +37,7 @@ def preprocess_text(
     tokens = [word for word in tokens if word.isalnum()]
     tokens = [
         word for word in tokens if word not in stopwords.words("english")
-    ]  ## remove stopwords
+    ]
     lemmatizer = WordNetLemmatizer()
     tokens = [lemmatizer.lemmatize(word) for word in tokens]
     return " ".join(tokens)

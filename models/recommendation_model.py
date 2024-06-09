@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import (
 )
 from utils.text_preprocessing import (
     preprocess_text,
-)  # Ensure this import is correct
+)
 
 
 class RecommendationModel:

@@ -15,7 +15,7 @@ except LookupError:
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    nltk.download('punkt')
+    nltk.download('punkt') 
 
 try:
     nltk.data.find('corpora/wordnet')

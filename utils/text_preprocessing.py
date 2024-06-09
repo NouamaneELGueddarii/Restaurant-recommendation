@@ -1,7 +1,13 @@
 import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
+from nltk.corpus import (
+    stopwords,
+)
+from nltk.tokenize import (
+    word_tokenize,
+)
+from nltk.stem import (
+    WordNetLemmatizer,
+)
 
 try:
     nltk.data.find("omw-1.4")
@@ -23,7 +29,9 @@ except LookupError:
     nltk.download("wordnet")
 
 
-def preprocess_text(text):
+def preprocess_text(
+    text,
+):
     text = text.lower()
     tokens = word_tokenize(text)
     tokens = [word for word in tokens if word.isalnum()]
